@@ -58,6 +58,10 @@ body {
   text-align: center;
 }
 
+.destination__inner--profile-text {
+  width: min(100%, 44rem);
+}
+
 .destination__inner--mosaic {
   place-items: center;
 }
@@ -89,6 +93,26 @@ body {
   min-height: 14.75rem;
 }
 
+.destination__inner--profile-text .destination__copy {
+  align-content: center;
+  min-height: 26rem;
+}
+
+.destination__invitation {
+  max-width: 28rem;
+  margin: 0 0 1.25rem;
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.destination__inner--profile-text h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(3.75rem, 5.5vw, 5rem);
+}
+
 .destination h1,
 .destination h2 {
   max-width: 100%;
@@ -101,7 +125,7 @@ body {
   text-wrap: balance;
 }
 
-.destination__copy > p:not(.destination__parent) {
+.destination__description {
   max-width: 34rem;
   min-height: 3rem;
   margin: 0;
@@ -210,29 +234,26 @@ footer {
     border-left: 0;
   }
 
-  .destination--profile .destination__inner {
-    grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr);
-    gap: 1.25rem;
-    text-align: left;
-  }
-
-  .destination--profile .destination__emblem {
-    width: 8.5rem;
-    height: 8.5rem;
-  }
-
   .destination--profile .destination__copy {
-    justify-items: start;
+    justify-items: center;
     min-height: 0;
+    text-align: center;
   }
 
-  .destination h1 {
-    margin: 0 0 0.45rem;
-    font-size: clamp(1.65rem, 7vw, 2.25rem);
+  .destination__invitation {
+    max-width: 18rem;
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
+    line-height: 1.15;
+  }
+
+  .destination__inner--profile-text h1 {
+    margin: 0 0 0.55rem;
+    font-size: clamp(2.15rem, 10vw, 3rem);
     line-height: 1;
   }
 
-  .destination__copy > p:not(.destination__parent) {
+  .destination__description {
     min-height: 0;
     font-size: 0.875rem;
     line-height: 1.35;
@@ -265,18 +286,8 @@ footer {
 }
 
 @media (max-width: 400px) {
-  .destination--profile .destination__inner {
-    grid-template-columns: minmax(0, 7.25rem) minmax(0, 1fr);
-    gap: 0.8rem;
-  }
-
-  .destination--profile .destination__emblem {
-    width: 7.25rem;
-    height: 7.25rem;
-  }
-
-  .destination h1 {
-    font-size: 1.55rem;
+  .destination__inner--profile-text h1 {
+    font-size: 2.25rem;
   }
 }
 
