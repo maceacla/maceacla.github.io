@@ -58,7 +58,7 @@ body {
   text-align: center;
 }
 
-.destination__inner--logo-only {
+.destination__inner--mosaic {
   place-items: center;
 }
 
@@ -76,6 +76,11 @@ body {
   width: min(31rem, 90%);
   height: auto;
   aspect-ratio: 1;
+}
+
+.destination__link--mosaic {
+  margin-top: 0.75rem;
+  padding-top: 0;
 }
 
 .destination__copy {
@@ -247,6 +252,10 @@ footer {
   .destination__emblem--mosaic {
     width: min(17rem, 70vw, 34svh);
     height: auto;
+  }
+
+  .destination__link--mosaic {
+    margin-top: 0.25rem;
   }
 
   footer {
